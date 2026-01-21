@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  gaming-hub:
+    image: httpd:alpine
+    container_name: gaming-hub-website
+    ports:
+      - "8080:80"
+    volumes:
+      - ./website:/usr/local/apache2/htdocs/:ro
+    restart: unless-stopped
+    networks:
+      - gaming-network
+
+networks:
+  gaming-network:
+    driver: bridge

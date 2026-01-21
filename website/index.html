@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Hub - Seu Portal de Jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-icon">🎮</span>
+                Gaming<span>Hub</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#games">Jogos</a></li>
+                <li><a href="#news">Notícias</a></li>
+                <li><a href="#community">Comunidade</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="hero">
+            <h1>Bem-vindo ao Gaming Hub</h1>
+            <p>Descubra os melhores jogos, notícias e reviews da comunidade gamer</p>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Buscar jogos...">
+                <button onclick="searchGames()">
+                    <span>🔍</span> Buscar
+                </button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-icon">🎮</div>
+                <div class="stat-number" id="gamesCount">0</div>
+                <div class="stat-label">Jogos Disponíveis</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">👥</div>
+                <div class="stat-number" id="usersCount">0</div>
+                <div class="stat-label">Usuários Ativos</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⭐</div>
+                <div class="stat-number" id="reviewsCount">0</div>
+                <div class="stat-label">Reviews</div>
+            </div>
+        </div>
+
+        <div class="games-section" id="games">
+            <h2 class="section-title">🎮 Jogos em Destaque</h2>
+            <div class="games-grid" id="gamesGrid"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Gaming Hub. Todos os direitos reservados.</p>
+        <p>Feito com 💜 para gamers</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
